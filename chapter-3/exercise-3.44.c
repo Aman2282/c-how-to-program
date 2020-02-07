@@ -23,3 +23,34 @@ int main() {
 
   return 0;
 }
+
+
+
+Its in Java:
+import java.util.Scanner;
+
+public class Checks_whether_its_a_qualateral_triangle {
+
+	public static void main(String[] args) {
+		 
+		int a, b, c;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter 1st side of the triangle: ");
+		a = input.nextInt();
+		System.out.print("Enter 2nd side of the triangle: ");
+		b = input.nextInt();
+		System.out.print("Enter 3rd side of the triangle: ");
+		c = input.nextInt();
+		
+		System.out.println(a == b && b == c && c == a ?   "The triangle is a qualateral.": "The triangle is not a qualateral.");
+		
+		/* if(a == b && b == c && c == a) {
+			System.out.println("The triangle is a qualateral.");
+			
+		}
+		else
+			System.out.println("The triangle is not a qualateral.");   */
+
+	}
+
+}
